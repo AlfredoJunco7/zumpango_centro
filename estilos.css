@@ -1,0 +1,1305 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+main p {
+    font-size: 15px;
+    font-family: var(--font_opens_sans);
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+
+/* =================  VARIABLES  =====================*/
+
+:root {
+
+  /* tipografia */
+  --font_opens_sans:'Open Sans', sans-serif;
+  --font_logo: 'Bad Script', cursive;
+
+  /* paleta de colores */
+  --color_black: #020509;
+  --color_azul: #00cffa;
+  --color_rojo: #ff0038;
+  --color_oro: #efb509;
+
+  /* colores tipodrafia */
+  --color_negro_tipografia: #000000;
+  --color_tipografia_blanco: rgb(255, 255, 255);
+
+}
+
+
+
+
+
+
+
+
+/* =================  CSS NAV  =====================*/
+
+
+
+/*===== VARIABLES CSS =====*/
+:root{
+  --header-height: 2.3rem;
+  --font-medium: 500;
+}
+
+@media screen and (min-width: 768px){
+  :root{
+      --big-font-size: 10.5rem;
+      --h2-font-size: 2rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+  }
+}
+
+/*===== Margenes =====*/
+:root{
+  --mb-1: .5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+}
+
+/*===== z index =====*/
+:root{
+  --z-fixed: 100;
+}
+
+/*===== BASE =====*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: var(--header-height) 0 0 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/*===== CLASS CSS ===== */
+.section{
+  padding: 3rem 0;
+}
+
+/*===== LAYOUT =====*/
+.bd-grid{
+  max-width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 2rem;
+  width: calc(100% - 2rem);
+}
+.l-header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: transparent;
+}
+
+
+/* ---------  tamaño imagen nav full -------------*/
+
+.l-header .nav .nav__logo img {
+  width: 25px;
+  height: 22px;
+}
+
+/*===== NAV =====*/
+.nav{
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px){
+  .nav__menu{
+      position: fixed;
+      top: var(--header-height);
+      right: -100%;
+      width: 80%;
+      height: 100%;
+      padding: 2rem;
+      background-image: url(./assets/imagenes/background_banner.jpg);
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: cover;
+      transition: .5s;
+      backdrop-filter: blur(10px);
+      -webkit-box-shadow: -1px 3px 5px 1px rgba(138,133,138,1);
+      -moz-box-shadow: -1px 3px 5px 1px rgba(138,133,138,1);
+      box-shadow: -1px 3px 5px 1px rgba(138,133,138,1);
+  }
+
+  .slogan h2 {
+    font-family: var(--font_logo);
+    font-size: 26px;
+    font-weight: 800;
+    margin-left: 12%;
+  }
+  .slogan .centro_about {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: -5px;
+    margin-left: 3px;
+  }
+  .slogan .centro_about p {
+    font-family: var(--font_opens_sans);
+    font-size: 17px;
+    font-weight: 200;
+  }
+  .slogan .centro_about img {
+    width: 16px;
+    height: 16px;
+  }
+  
+  
+  .nav_item_uno {
+    margin-top: 35px;
+  }
+}
+
+
+
+
+.nav__item{
+  margin-bottom: var(--mb-4);
+}
+.nav__link{
+  position: relative;
+  color: var(--color_negro_tipografia);
+  font-family: var(--font_opens_sans);
+  font-weight: 400;
+  font-size: 17px;
+}
+.nav__link:hover{
+  color: var(--color_black);
+}
+.nav__logo{
+  color: var(--white-color);
+}
+.nav__toggle{
+  color: var(--white-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+/*      tamaño icono nav responsive   */
+.nav__toggle img {
+  width: 28px;
+  height: 22px;
+  object-fit: cover;
+}
+/*      tamaño imagen logo nav responsive   */
+
+.l-header .nav .nav__logo img {
+  width: 22px;
+  height: 20px;
+}
+
+
+
+/*=== Show menu ===*/
+.show{
+  right: 0;
+}
+
+
+/* ===== MEDIA QUERIES =====*/
+
+@media screen and (min-width: 768px){
+    body{
+        margin: 0;
+    }
+    .nav{
+        height: calc(var(--header-height) + 1rem);
+    }
+    .nav__list{
+        display: flex;
+    }
+    .nav__item{
+        margin-left: var(--mb-4);
+        margin-bottom: 0;
+    }
+    .nav__toggle{
+        display: none;
+    }
+    .nav__link{
+        color: var(--white-color);
+    }
+    .nav__link:hover{
+        color: var(--white-color);
+    }
+    .active::after{
+        background-color: var(--white-color);
+    }
+    .slogan {
+      display: none;
+    }
+  }
+
+
+@media screen and (min-width: 1024px){
+    .bd-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+ 	/* Change background header */
+   .scroll-header {
+    background-color: var(--color_tipografia_blanco );
+    box-shadow: 0 0 6px rgba(16, 57, 65, 0.15);
+  }
+  
+
+
+
+
+
+
+
+
+
+/* ===============  CSS SWIPER BANNER  ===============*/
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 90vh;
+}
+
+.swiper-slide {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.swiper-slide_banner {
+  padding: 80px 170px;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.swiper-slide .title {
+  font-size: 55px;
+  font-family: var(--font_logo);
+  font-weight: 600;
+  z-index: 10;
+}
+
+.swiper-slide .subtitle {
+  font-size: 21px;
+  font-family: var(--font_opens_sans);
+  font-weight: 200;
+  z-index: 10;
+}
+
+.swiper-slide .text p {
+  font-size: 15px;
+  font-family: var(--font_opens_sans);
+  font-weight: 300;
+  max-width: 500px;
+  line-height: 1.5;
+  z-index: 10;
+  margin: 30px 0 20px 0;
+}
+
+.enlace_banner {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide .enlace_banner a {
+  font-size: 16px;
+  font-family: var(--font_opens_sans);
+  font-weight: 200;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 7px 15px;
+  color: black;
+  background-color: var(--color_azul);
+  z-index: 10;
+  -webkit-box-shadow: -1px 4px 5px -1px rgba(0, 0, 0, 0.568);
+  -moz-box-shadow: -1px 4px 5px -1px rgba(0, 0, 0, 0.568);
+  box-shadow: -1px 4px 5px -1px rgba(0, 0, 0, 0.582);
+}
+
+.swiper-slide a img {
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+}
+.swiper-slide a img .info {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+
+
+/* ===============  CSS TITLES  ===============*/
+
+.title_about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 100px;
+  }
+  
+  .title_about h2 {
+    font-family: var(--font_opens_sans);
+    color: var(--color_negro_tipografia);
+    font-size: 22px;
+    font-weight: 400;
+  }
+  /*  margin h2 titulo about    */
+  .title_about h2 {
+    margin-top: -15px;
+  }
+  
+  .title_about .line_subtitle {
+    width: 8%;
+    height: 2px;
+    background-color: var(--color_azul);
+    margin-top: 8px;
+    border-radius: 15px;
+  }
+  
+
+
+
+
+
+
+
+  /* ===============  CSS CONOCENOS  ===============*/
+
+.about_us {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 100px;
+  }
+  
+  .textos_about {
+    width: 54%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 10%;
+  }
+  
+  .textos_about h2 {
+    font-family: var(--font_logo);
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color_negro_tipografia);
+    margin-top: -50px;
+  }
+  
+  .centro_about {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding-left: 60px;
+    margin-top: -5px;
+  }
+  
+  .textos_about .sub_centro_about {
+    font-size: 15px;
+    font-family: var(--font_opens_sans);
+    font-weight: 100;
+    color: var(--color_negro_tipografia);
+  }
+  
+  .centro_about img {
+    width: 11px;
+    height: 15px;
+    object-fit: cover;
+    margin-left: 5px;
+    margin-bottom: 2px;
+  }
+  
+  .textos_about .contacto_about {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 200;
+    font-family: var(--font_opens_sans);
+    color: var(--color_negro_tipografia);
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 30px;
+    background-color: var(--color_azul);
+    -webkit-box-shadow: -1px 4px 5px -1px rgba(0, 0, 0, 0.568);
+    -moz-box-shadow: -1px 4px 5px -1px rgba(0, 0, 0, 0.568);
+    box-shadow: -1px 4px 5px -1px rgba(0, 0, 0, 0.582);
+  }
+  
+  .textos_about .p_textos_about {
+    font-size: 16px;
+    font-family: var(--font_opens_sans);
+    font-weight: 300;
+    max-width: 500px;
+    line-height: 1.2;
+    z-index: 10;
+    color: var(--color_negro_tipografia);
+    width: 100%;
+    text-align: right;
+    margin-top: 20px;
+    letter-spacing: .1px;
+    word-spacing: .2px;
+  }
+  
+ .textos_about .button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 200;
+    font-family: var(--font_opens_sans);
+    color: var(--color_negro_tipografia);
+    padding: 7px 12px;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: var(--color_azul);
+    -webkit-box-shadow: -1px 4px 5px -1px rgba(0, 0, 0, 0.568);
+    -moz-box-shadow: -1px 4px 5px -1px rgba(0, 0, 0, 0.568);
+    box-shadow: -1px 4px 5px -1px rgba(0, 0, 0, 0.582);
+    animation: button 3s ease-in-out infinite;
+  }
+  
+  .textos_about .button img {
+      margin-right: 10px;
+      object-fit: cover;
+      width: 22px;
+      height: 22px;
+      animation: button 3s ease-in-out infinite;
+  }
+  
+
+  @keyframes button {
+      0% {
+          transform: scale(1);
+      }
+      50% {
+          transform: scale(.95);
+      }
+      100% {
+          transform: scale(1);
+      }
+  }
+  
+  
+  .img1_about {
+    width: 43%;
+  }
+  
+  .img1_about img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    -webkit-box-shadow: -1px 4px 5px -1px rgba(0, 0, 0, 0.568);
+    -moz-box-shadow: -1px 4px 5px -1px rgba(0, 0, 0, 0.568);
+    box-shadow: -1px 4px 5px -1px rgba(0, 0, 0, 0.582);
+    /*filter: blur(1.5px);
+    z-index: -10  ;
+    border-radius: 100px 3px 3px 3px;*/
+  }
+  
+  .img2_about img {
+    display: none;
+    /*position: absolute;
+    object-fit: cover;
+    width: 220px;
+    height: 220px;
+    z-index: 10;
+    border-radius: 50%;
+    right: 25%;
+    bottom: 23%;
+    border: 3px solid var(--color_azul);*/
+  }
+
+
+
+
+  .trailer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100000;
+    background-color: rgba(0, 0, 0, 0.795);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.trailer.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.trailer video {
+    position: relative;
+    max-width: 900px;
+    outline: none;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter:invert(1);
+    max-width: 32px;
+    width: 27px;
+    height: 27px;
+    object-fit: cover;
+    z-index: 10000;
+}
+
+@media screen and (max-width: 990px) {
+    .trailer video {
+        max-width: 93%;
+    }
+    .close {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ===============  CSS TIENDAS  ========================*/
+
+
+/* === CSS TITLES =====*/
+
+.titles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 100px;
+  }
+  
+  .titles_tiendas h2 {
+    font-family: var(--font_opens_sans);
+    color: var(--color_tipografia_blanco);
+    font-size: 22px;
+    font-weight: 00;
+    padding-top: 80px;
+  }
+  
+  .titles .line_subtitle_corto {
+    width: 4%;
+    height: 2px;
+    background-color: var(--color_azul);
+    margin-top: 10px;
+    border-radius: 15px;
+  }
+  
+  
+  
+  
+  
+  
+  .tiendas {
+    width: 100%;
+    background-image: url(./assets/imagenes/background_banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+    margin-top: 150px;
+  }
+  
+  .tiendas .tiendas_overlay {
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.904);
+    padding: 0 0 40px 0;
+  }
+  
+  .tiendas p {
+    color: var(--color_tipografia_blanco);
+  }
+  
+  
+  
+  .area_tiendas .descipcion_tiendas {
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+  }
+  
+  .area_tiendas .descipcion_tiendas p {
+    font-family: var(--font_opens_sans);
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: .1px;
+    word-spacing: .2px;
+    text-align: center;
+    font-weight: 200;
+    width: 85%;
+  }
+  
+  /* 40 % de anco h1*/
+  .area_tiendas .item_tiendas_uno  {
+    display: flex;
+    align-items: center;
+    padding-top: 70px;
+    width: 75%;
+    margin: auto;
+  }
+  
+  .area_tiendas .item_tiendas_uno img {
+    width: 23px;
+    height: 23px;
+    object-fit: cover;
+  }
+  
+  .area_tiendas h2 {
+    font-family: var(--font_opens_sans);
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--color_rojo);
+    margin-left: 15px;
+  }
+  
+  /* 40 % ancho p */
+  .area_tiendas p {
+    font-family: var(--font_opens_sans);
+    font-size: 16px;
+    font-weight: 200;
+    width: 75%;
+    margin: auto;
+    padding-top: 20px;
+  }
+  
+  
+  
+  /* ===============  CSS SWIPER TIENDAS  ========================*/
+  
+  
+  /* 40% de ancho slider */
+  .swiper_tiendas {
+    width: 55%;
+    height: 380px;
+    margin-top: 40px;
+  }
+  
+  .swiper-slide_tiendas a {
+    text-decoration: none;
+  }
+  
+  .swiper-slide_tiendas a img {
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+  }
+  
+  .swiper-slide_tiendas a .textos_slider_tiendas {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 65%;
+    margin-top: 31%;
+    padding: 5px 3px;
+    background-color: hsla(190, 100%, 49%, 0.61);
+    border-radius: 0 40px 40px 0;
+    z-index: 10;
+  }
+  
+  
+  .swiper-slide_tiendas a .textos_slider_tiendas h2 {
+    font-family: var(--font_opens_sans);
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--color_negro_tipografia);
+    margin-left: 5%;
+  }
+  
+  .swiper-slide_tiendas a .textos_slider_tiendas p {
+    font-family: var(--font_opens_sans);
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color_negro_tipografia);
+    text-align: start;
+    width: 90%;
+  }
+
+
+
+
+
+
+
+
+
+/* ===============  CSS PLUGINS  ========================*/
+
+
+.plugins {
+    width: 80%;
+    margin: auto;
+    margin-top: 120px;
+  }
+  
+  .plugins h2 {
+    font-family: var(--font_logo);
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .plugins .centro_about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -7px;
+  }
+  
+  .plugins .centro_about p {
+    font-family: var(--font_opens_sans);
+    font-size: 18px;
+    font-weight: 200;
+  }
+  .plugins .centro_about img {
+    width: 17px;
+    height: 17px;
+    object-fit: cover;
+  }
+  
+  .plugins_items {
+    width: 100%;
+    margin: auto;
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  
+  
+  .plugin_item_area {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .plugin_item_area img {
+    width: 135px;
+    height: 110px;
+    object-fit: cover;
+  }
+  
+  .plugin_item_area h3 {
+    font-family: var(--font_opens_sans);
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  
+  .plugin_item_area p {
+    font-family: var(--font_opens_sans);
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    width: 85%;
+    line-height: 1.2;
+    letter-spacing: .1px;
+    word-spacing: .2px;
+  }
+  
+
+
+
+
+
+
+
+  /* ===============  CSS PARALLAX  ========================*/
+
+
+.parallax {
+    width: 100%;
+    height: 520px;
+    margin-top: 140px;
+  }
+  
+  .parallax .overlay_parallax {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/imagenes/img_parallax.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+     z-index: -1;
+  }
+  
+  .parallax .overlay_parallax .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color_azul);
+    border-radius: 30px;
+    z-index: -2;
+    animation: parallax 7s alternate ease-in-out infinite;
+  }
+  
+  .parallax .overlay_parallax .textos_parallax {
+    position: absolute;
+    width: 45%;
+    height: 330px;
+    margin: auto;
+    background-color: white;
+    border-radius: 30px;
+  }
+  
+  .parallax .overlay_parallax .textos_parallax .info_parallax {
+    width: 80%;
+    height: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .parallax .overlay_parallax .textos_parallax .info_parallax img {
+    width: 47px;
+    height: 47px;
+    object-fit: cover;
+    margin-top: 7%;
+    padding: 10px 10px;
+    border-radius: 50%;
+    background-color: var(--color_azul);
+    -webkit-box-shadow: -1px 4px 5px -1px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: -1px 4px 5px -1px rgba(0, 0, 0, 0.342);
+    box-shadow: -1px 4px 5px -1px rgba(0, 0, 0, 0.322);
+  }
+  
+  .parallax .overlay_parallax .textos_parallax .info_parallax h3 {
+    font-family: var(--font_opens_sans);
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  .parallax .overlay_parallax .textos_parallax .info_parallax .line_parallax {
+    width: 20%;
+    height: 4px;
+    border-radius: 3px;
+    background-color: var(--color_azul);
+  }
+  
+  .parallax .overlay_parallax .textos_parallax .info_parallax p {
+    font-family: var(--font_opens_sans);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: .1px;
+    word-spacing: .2px;
+    text-align: center;
+    width: 90%;
+  }
+  
+  
+  @keyframes parallax {
+    0% {
+      transform: scale(.1);
+    }
+    50% {
+      transform: rotate(-7deg);
+      background-color: var(--color_azul);
+    }
+    100% {
+      transform: rotate(7deg);
+        background-color: var(--color_rojo);
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============  CSS PROMOCIONAL  ===============*/
+
+.title_promocional {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 100px;
+  }
+  
+  .title_promocional h2 {
+    font-family: var(--font_opens_sans);
+    color: var(--color_negro_tipografia);
+    font-size: 22px;
+    font-weight: 400;
+  }
+  
+  /*  margin h2 titulo about    */
+  .title_promocional h2 {
+    margin-top: -15px;
+  }
+  
+  .title_promocional .line_subtitle_largo {
+    width: 7%;
+    height: 2px;
+    background-color: var(--color_azul);
+    margin-top: 8px;
+    border-radius: 15px;
+  }
+
+
+
+
+  .titles .descripcion_promocional {
+    font-family: var(--font_opens_sans);
+    font-size: 17px;
+    line-height: 1.2;
+    letter-spacing: .1px;
+    word-spacing: .2px;
+    text-align: center;
+    font-weight: 300;
+    width: 80%;
+    padding-top: 30px;
+  }
+  
+  
+  .swiper_promocional {
+    width: 65%;
+    height: 500px;
+    margin-top: 40px;
+    position: relative;
+  }
+  
+  .swiper_promocional .uno {
+    background-image: url(./assets/imagenes/img_parallax.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .swiper_promocional .dos {
+    background-image: url(./assets/imagenes/restaurant.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .swiper_promocional .tres {
+    background-image: url(./assets/imagenes/boutique_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .swiper_promocional .cuatro {
+    background-image: url(./assets/imagenes/background_banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  
+  
+  
+  .swiper-slide_promocional .info_promocional {
+    z-index: 10;
+    width: 34%;
+    height: 200px;
+    background-color: var(--color_azul);
+    border-radius: 10px;
+    position: relative;
+    top: 57%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  
+  .swiper-slide_promocional .info_promocional h3 {
+    font-family: var(--font_opens_sans);
+    font-weight: 600;
+    font-size: 18px;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    width: 95%;
+    padding-top: 3%;
+  }
+  
+  .swiper-slide_promocional .info_promocional p {
+    font-family: var(--font_opens_sans);
+    font-weight: 200;
+    font-size: 14px;
+    margin-top: 16%;
+    border: 1px solid black;
+    padding: 10px 10px;
+    width: 90%;
+    position: absolute;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+  /* =================  CSS CONTACTO  =====================*/
+
+
+.footer {
+    width: 100%;
+    margin: auto;
+    background-image: url(./assets/imagenes/backgound_tiendas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -2;
+  }
+  
+  .footer .overlay_footer {
+    width: 100%;
+    height: auto;
+    z-index: -2;
+    background-color: hsla(0, 0%, 0%, 0.904);
+  }
+  
+  .footer .descripcion_footer {
+    font-family: var(--font_opens_sans);
+    font-size: 17px;
+    line-height: 1.2;
+    letter-spacing: .1px;
+    word-spacing: .2px;
+    text-align: center;
+    font-weight: 200;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    color: var(--color_tipografia_blanco);
+  }
+  
+  .footer .location {
+    width: 100%;
+    margin: auto;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer .location img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .footer .location p {
+    font-family: var(--font_opens_sans);
+    font-size: 18px;
+    font-weight: 200;
+    margin-left: 20px;
+    color: var(--color_tipografia_blanco);
+  }
+  
+  
+  .footer .area_contacto {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .footer .area_contacto h3 {
+    font-family: var(--font_opens_sans);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color_rojo);
+    padding-top: 80px;
+    line-height: 1.2;
+    letter-spacing: .1px;
+    word-spacing: .2px;
+  }
+  
+  .footer .area_contacto .desc {
+    font-family: var(--font_opens_sans);
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--color_tipografia_blanco);
+    padding-top: 10px;
+    line-height: 1.2;
+    letter-spacing: .1px;
+    word-spacing: .2px;
+  }
+  
+  .footer .area_contacto_sitio .contact {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer .area_contacto_sitio .contact img {
+    width: 23px;
+    height: 23px;
+    object-fit: cover;
+  }
+  
+  .footer .area_contacto_sitio .contact p {
+    font-family: var(--font_opens_sans);
+    font-size: 16px;
+    color: var(--color_tipografia_blanco);
+    font-weight: 200;
+    margin-left: 20px;
+    line-height: 1.2;
+    letter-spacing: .1px;
+    word-spacing: .2px;
+  }
+  
+  
+  
+  
+  
+  .footer .area_contacto_redes .redes a {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer .area_contacto_redes .redes img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+  }
+  
+  .footer .area_contacto_redes .redes p {
+    font-family: var(--font_opens_sans);
+    font-size: 16px;
+    color: var(--color_tipografia_blanco);
+    font-weight: 200;
+    margin-left: 20px;
+    line-height: 1.2;
+    letter-spacing: .1px;
+    word-spacing: .2px;
+  }
+  
+  
+  .footer .derechos {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 0 50px 0;
+  }
+  
+  .footer .derechos p {
+    font-family: var(--font_opens_sans);
+    font-size: 16px;
+    color: var(--color_tipografia_blanco);
+    font-weight: 200;
+    line-height: 1.2;
+    letter-spacing: .1px;
+    word-spacing: .2px;
+  }
+
+  .web {
+      text-decoration: underline;
+  }
+  
+  .footer .derechos .reservados {
+    margin-top: 5px;
+  }
+  

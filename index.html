@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zumpango Centro</title>
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="shortcut icon" href="./assets/imagenes/icon_bag_logo.svg" type="image/x-icon">
+</head>
+<body>
+
+
+      <!--------------------- HEADER NAV ----------------------------->
+
+  <header class="l-header" id="l-header">
+    <nav class="nav bd-grid">
+        <div>
+            <a href="#" class="nav__logo"><img loading="lazy" src="./assets/imagenes/icon_bag_logo.svg" alt="logo"></a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+
+              <div class="slogan">
+                <h2>Zumpango</h2>
+
+                <div class="centro_about">
+                  <p class="sub_centro_about">CENTRO</p>
+                  <img loading="lazy" src="./assets/imagenes/icon_bag_logo.svg" alt="bag">  
+                </div>
+        
+              </div>
+
+                <li class="nav__item nav_item_uno"><a href="#" class="nav__link ">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">Conocenos</a></li>
+                <li class="nav__item"><a href="#tiendas" class="nav__link">Tiendas</a></li>
+                <li class="nav__item"><a href="#promocional" class="nav__link">Promocional</a></li>
+                <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <img loading="lazy" src="./assets/imagenes/icon_menu.svg" alt="logo">
+        </div>
+    </nav>
+</header>
+
+
+
+
+
+
+    <!------------------ SWIPER BANNER  --------------------------------------------------------->
+
+    <div style="--swiper-navigation-color: #00cffa; --swiper-pagination-color: #00cffa;" class="swiper mySwiper">
+
+    <div class="parallax-bg" style=" background-image: url(./assets/imagenes/background_banner.jpg); " data-swiper-parallax="-23%"></div>
+
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide swiper-slide_banner">
+        <div class="title" data-swiper-parallax="-300">Zumpango</div>
+        <div class="subtitle" data-swiper-parallax="-200">CENTRO</div>
+        <div class="text" data-swiper-parallax="-100">
+          <p>
+            En este sitio web podras encontrar los servicios o productos que necesites.
+            visita en linea las tiendas, negocios y establecimientos que se encuentran en Zumpango CENTRO
+            y conoce la gran variedad de servicios que contamos en el Municipio.
+          </p>
+        </div>
+        <div class="enlace_banner">
+          <a href="#tiendas"> <img loading="lazy" src="./assets/imagenes/icon_bag_logo.svg" alt="shoping"> Tiendas</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide swiper-slide_banner">
+        <div class="title" data-swiper-parallax="-300">Planifique</div>
+        <div class="subtitle" data-swiper-parallax="-200">- sus compras</div>
+        <div class="text" data-swiper-parallax="-100">
+          <p>
+            Desde la comodidad de su hogar, computadora o telefono movil
+            visite el sitio web Zumpago CENTRO, conozca y contacte con la tienda para 
+            cualquier duda hacerca de lo que desea. <br>
+            todas la tiendas cuentan con una seccion de datos de contacto. 
+          </p>
+        </div>
+      </div>
+
+      <div class="swiper-slide swiper-slide_banner">
+        <div class="title" data-swiper-parallax="-300">Infortate</div>
+        <div class="subtitle" data-swiper-parallax="-200">- blog promocional</div>
+        <div class="text" data-swiper-parallax="-100">
+          <p>
+            En la seccion de Promocional, podras informarte hacerca de eventos o noticias
+            relevantes referentes con el Municipio de Zumpango. <br>
+            Estamos seguros que seran de utilidad para ti !
+          </p>
+        </div>
+        <div class="enlace_banner">
+          <a href="#promocional"> <img loading="lazy" class="info" src="./assets/imagenes/icon_info.svg" alt="shoping"> Promocional</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+  <div id="about"></div>
+
+<main>
+
+  <!------------------ TITLES  --------------------------------------------------------->
+
+  <div class="titles title_about">
+    <h2>Acerca de Nosotros</h2>
+    <span class="line_subtitle"></span>
+  </div>
+
+
+
+
+
+
+  <!------------------ CONOCENOS  --------------------------------------------------------->
+
+
+  <section class="about_us">
+    <div class="textos_about">
+
+      <h2>Zumpango</h2>
+
+      <div class="centro_about">
+        <p class="sub_centro_about">CENTRO</p>
+        <img loading="lazy" src="./assets/imagenes/icon_bag_logo.svg" alt="bag">  
+      </div>
+
+      <a class="contacto_about" href="#">Contacto</a>
+
+      <p class="p_textos_about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum magni facere, unde ducimus possimus quod quam id nulla illo suscipit eos quidem eligendi Autem ab possimus dolores, repudiandae laudantium itaque eligendi? Autem ab possimus dolores, repudiandae laudantium itao</p>
+
+      <a class="button" href="#about" onclick="toggle();"><img src="./assets/imagenes/icon_play.svg" alt="play"> Mira el video promocional</a>
+
+      <div class="trailer">
+        <video src="./assets/imagenes/Musica Cristiana _ Libre Yo Soy Libre (Juan Carlos Alvarado) con LETRA(240P).mp4" controls="true"></video>
+        <img loading="lazy" src="./assets/imagenes/icon_close.svg" class="close" onclick="toggle();">
+    </div>
+
+    </div>
+
+
+
+    <div class="img1_about">
+      <img loading="lazy" src="./assets/imagenes/about_1.jpg" alt="compras">
+    </div>
+
+
+   </section>
+
+
+
+
+
+
+
+
+
+
+
+     <!------------------ TIENDAS  --------------------------------------------------------->
+
+
+  <section class="tiendas" id="tiendas">
+
+    <div class="tiendas_overlay">
+
+      <!------------------ TITLES  --------------------------------------------------------->
+
+      <div class=" titles titles_tiendas">
+        <h2>Tiendas</h2>
+        <span class="line_subtitle_corto"></span>
+      </div>
+
+      
+
+
+      <div class="area_tiendas">
+
+        <div class="descipcion_tiendas">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dicta cumque nemo mollitia delectus molestiae consequatur assumenda aperiam! Rem explicabo consectetur blanditiis vel voluptatem. Qui est natus soluta id vitae deserunt, velit nulla dignissimos sit aliquam voluptas dolorum impedit! Quam consequatur ipsa ullam non deserunt, sed ut. Eaque, tenetur sunt.</p>
+        </div>
+
+
+        <div class="area_tiendas area_tiendas_seccion_uno">
+
+          <!--------------- SECCION 1 ----------------->
+
+          <div class="item_tiendas_uno left">
+            <img loading="lazy" src="./assets/imagenes/icon_tienda.png" alt="bag">
+            <h2>Titulo 1</h2>
+          </div>
+          <p class="left">descripcion del titulo, resumen de lo que encontraran en esta seccion.</p>
+
+
+          
+          <!-- Swiper -->
+          <div class="swiper  tiendas swiper_tiendas mySwiper left">
+            <div class="swiper-wrapper">
+
+              <!-- Slide 1-->
+              <div class="swiper-slide swiper-slide_tiendas seccion_uno_slide_uno">
+                
+                <a href="#">
+
+                  <div class="textos_slider_tiendas">
+                    <h2>NOMBRE TIENDA</h2>
+                    <p>descripcion breve de los productos o servicios que encontraras en esta tienda</p>
+                  </div>
+
+                  <img loading="lazy" src="./assets/imagenes/boutique_1.jpg" alt="">
+
+                </a>
+
+              </div>
+
+
+
+              
+
+              <!-- Slide 2-->
+              <div class="swiper-slide swiper-slide_tiendas seccion_uno_slide_uno">
+                
+                <a href="#">
+
+                  <div class="textos_slider_tiendas">
+                    <h2>NOMBRE TIENDA</h2>
+                    <p>descripcion breve de los productos o servicios que encontraras en esta tienda</p>
+                  </div>
+
+                  <img loading="lazy" src="./assets/imagenes/restaurant.jpg" alt="">
+
+                </a>
+
+              </div>
+
+
+
+
+              <!-- Slide 3-->
+              <div class="swiper-slide swiper-slide_tiendas seccion_uno_slide_uno">
+                
+                <a href="#">
+
+                  <div class="textos_slider_tiendas">
+                    <h2>NOMBRE TIENDA</h2>
+                    <p>descripcion breve de los productos o servicios que encontraras en esta tienda</p>
+                  </div>
+
+                  <img loading="lazy" src="./assets/imagenes/paseleria.jpg" alt="">
+
+                </a>
+
+              </div>
+
+
+
+
+              <!-- Slide 4-->
+              <div class="swiper-slide swiper-slide_tiendas seccion_uno_slide_uno">
+                
+                <a href="#">
+
+                  <div class="textos_slider_tiendas">
+                    <h2>NOMBRE TIENDA</h2>
+                    <p>descripcion breve de los productos o servicios que encontraras en esta tienda</p>
+                  </div>
+
+                  <img loading="lazy" src="./assets/imagenes/tecnologia.jpg" alt="">
+
+                </a>
+
+              </div>
+
+
+
+
+              <!-- Slide 5-->
+              <div class="swiper-slide swiper-slide_tiendas seccion_uno_slide_uno">
+                
+                <a href="#">
+
+                  <div class="textos_slider_tiendas">
+                    <h2>NOMBRE TIENDA</h2>
+                    <p>descripcion breve de los productos o servicios que encontraras en esta tienda</p>
+                  </div>
+
+                  <img loading="lazy" src="./assets/imagenes/cafeteria.jpg" alt="">
+
+                </a>
+
+              </div>
+
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+           </div>
+
+
+
+
+
+
+
+         <!--------------- SECCION 2 ----------------->
+
+          <div class="item_tiendas_uno left">
+            <img loading="lazy" src="./assets/imagenes/icon_tienda.png" alt="bag">
+            <h2>Titulo 2</h2>
+          </div>
+          <p class="left">descripcion del titulo, resumen de lo que encontraran en esta seccion.</p>
+
+
+          
+          <!-- Swiper -->
+          <div class="swiper  tiendas swiper_tiendas mySwiper left">
+            <div class="swiper-wrapper">
+
+              <!-- Slide 1-->
+              <div class="swiper-slide swiper-slide_tiendas seccion_uno_slide_uno">
+                
+                <a href="#">
+
+                  <div class="textos_slider_tiendas">
+                    <h2>NOMBRE TIENDA</h2>
+                    <p>descripcion breve de los productos o servicios que encontraras en esta tienda</p>
+                  </div>
+
+                  <img loading="lazy" src="./assets/imagenes/cafeteria.jpg" alt="">
+
+                </a>
+
+              </div>
+
+
+
+              
+
+              <!-- Slide 2-->
+              <div class="swiper-slide swiper-slide_tiendas seccion_uno_slide_uno">
+                
+                <a href="#">
+
+                  <div class="textos_slider_tiendas">
+                    <h2>NOMBRE TIENDA</h2>
+                    <p>descripcion breve de los productos o servicios que encontraras en esta tienda</p>
+                  </div>
+
+                  <img loading="lazy" src="./assets/imagenes/restaurant.jpg" alt="">
+
+                </a>
+
+              </div>
+
+
+
+
+              <!-- Slide 3-->
+              <div class="swiper-slide swiper-slide_tiendas seccion_uno_slide_uno">
+                
+                <a href="#">
+
+                  <div class="textos_slider_tiendas">
+                    <h2>NOMBRE TIENDA</h2>
+                    <p>descripcion breve de los productos o servicios que encontraras en esta tienda</p>
+                  </div>
+
+                  <img loading="lazy" src="./assets/imagenes/paseleria.jpg" alt="">
+
+                </a>
+
+              </div>
+
+
+
+
+              <!-- Slide 4-->
+              <div class="swiper-slide swiper-slide_tiendas seccion_uno_slide_uno">
+                
+                <a href="#">
+
+                  <div class="textos_slider_tiendas">
+                    <h2>NOMBRE TIENDA</h2>
+                    <p>descripcion breve de los productos o servicios que encontraras en esta tienda</p>
+                  </div>
+
+                  <img loading="lazy" src="./assets/imagenes/tecnologia.jpg" alt="">
+
+                </a>
+
+              </div>
+
+
+
+
+              <!-- Slide 5-->
+              <div class="swiper-slide swiper-slide_tiendas seccion_uno_slide_uno">
+                
+                <a href="#">
+
+                  <div class="textos_slider_tiendas">
+                    <h2>NOMBRE TIENDA</h2>
+                    <p>descripcion breve de los productos o servicios que encontraras en esta tienda</p>
+                  </div>
+
+                  <img loading="lazy" src="./assets/imagenes/cafeteria.jpg" alt="">
+
+                </a>
+
+              </div>
+
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+           
+
+
+
+
+
+
+
+
+          <!--------------- SECCION 3 ----------------->
+
+          <div class="item_tiendas_uno left">
+            <img loading="lazy" src="./assets/imagenes/icon_tienda.png" alt="bag">
+            <h2>Titulo 3</h2>
+          </div>
+          <p class="left">descripcion del titulo, resumen de lo que encontraran en esta seccion.</p>
+
+
+          
+          <!-- Swiper -->
+          <div class="swiper  tiendas swiper_tiendas mySwiper left">
+            <div class="swiper-wrapper">
+
+              <!-- Slide 1-->
+              <div class="swiper-slide swiper-slide_tiendas seccion_uno_slide_uno">
+                
+                <a href="#">
+
+                  <div class="textos_slider_tiendas">
+                    <h2>NOMBRE TIENDA</h2>
+                    <p>descripcion breve de los productos o servicios que encontraras en esta tienda</p>
+                  </div>
+
+                  <img loading="lazy" src="./assets/imagenes/deportes.jpg" alt="">
+
+                </a>
+
+              </div>
+
+
+
+              
+
+              <!-- Slide 2-->
+              <div class="swiper-slide swiper-slide_tiendas seccion_uno_slide_uno">
+                
+                <a href="#">
+
+                  <div class="textos_slider_tiendas">
+                    <h2>NOMBRE TIENDA</h2>
+                    <p>descripcion breve de los productos o servicios que encontraras en esta tienda</p>
+                  </div>
+
+                  <img loading="lazy" src="./assets/imagenes/restaurant.jpg" alt="">
+
+                </a>
+
+              </div>
+
+
+
+
+              <!-- Slide 3-->
+              <div class="swiper-slide swiper-slide_tiendas seccion_uno_slide_uno">
+                
+                <a href="#">
+
+                  <div class="textos_slider_tiendas">
+                    <h2>NOMBRE TIENDA</h2>
+                    <p>descripcion breve de los productos o servicios que encontraras en esta tienda</p>
+                  </div>
+
+                  <img loading="lazy" src="./assets/imagenes/paseleria.jpg" alt="">
+
+                </a>
+
+              </div>
+
+
+
+
+              <!-- Slide 4-->
+              <div class="swiper-slide swiper-slide_tiendas seccion_uno_slide_uno">
+                
+                <a href="#">
+
+                  <div class="textos_slider_tiendas">
+                    <h2>NOMBRE TIENDA</h2>
+                    <p>descripcion breve de los productos o servicios que encontraras en esta tienda</p>
+                  </div>
+
+                  <img loading="lazy" src="./assets/imagenes/tecnologia.jpg" alt="">
+
+                </a>
+
+              </div>
+
+
+
+
+              <!-- Slide 5-->
+              <div class="swiper-slide swiper-slide_tiendas seccion_uno_slide_uno">
+                
+                <a href="#">
+
+                  <div class="textos_slider_tiendas">
+                    <h2>NOMBRE TIENDA</h2>
+                    <p>descripcion breve de los productos o servicios que encontraras en esta tienda</p>
+                  </div>
+
+                  <img loading="lazy" src="./assets/imagenes/cafeteria.jpg" alt="">
+
+                </a>
+
+              </div>
+
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          
+
+
+
+
+
+        
+                   <!--------------- SECCION 4 ----------------->
+
+                   <div class="item_tiendas_uno left">
+                    <img loading="lazy" src="./assets/imagenes/icon_tienda.png" alt="bag">
+                    <h2>Titulo 4</h2>
+                  </div>
+                  <p class="left">descripcion del titulo, resumen de lo que encontraran en esta seccion.</p>
+        
+        
+                  
+                  <!-- Swiper -->
+                  <div class="swiper  tiendas swiper_tiendas mySwiper left">
+                    <div class="swiper-wrapper">
+        
+                      <!-- Slide 1-->
+                      <div class="swiper-slide swiper-slide_tiendas seccion_uno_slide_uno">
+                        
+                        <a href="#">
+        
+                          <div class="textos_slider_tiendas">
+                            <h2>NOMBRE TIENDA</h2>
+                            <p>descripcion breve de los productos o servicios que encontraras en esta tienda</p>
+                          </div>
+        
+                          <img loading="lazy" src="./assets/imagenes/paseleria.jpg" alt="">
+        
+                        </a>
+        
+                      </div>
+        
+        
+        
+                      
+        
+                      <!-- Slide 2-->
+                      <div class="swiper-slide swiper-slide_tiendas seccion_uno_slide_uno">
+                        
+                        <a href="#">
+        
+                          <div class="textos_slider_tiendas">
+                            <h2>NOMBRE TIENDA</h2>
+                            <p>descripcion breve de los productos o servicios que encontraras en esta tienda</p>
+                          </div>
+        
+                          <img loading="lazy" src="./assets/imagenes/restaurant.jpg" alt="">
+        
+                        </a>
+        
+                      </div>
+        
+        
+        
+        
+                      <!-- Slide 3-->
+                      <div class="swiper-slide swiper-slide_tiendas seccion_uno_slide_uno">
+                        
+                        <a href="#">
+        
+                          <div class="textos_slider_tiendas">
+                            <h2>NOMBRE TIENDA</h2>
+                            <p>descripcion breve de los productos o servicios que encontraras en esta tienda</p>
+                          </div>
+        
+                          <img loading="lazy" src="./assets/imagenes/paseleria.jpg" alt="">
+        
+                        </a>
+        
+                      </div>
+        
+        
+        
+        
+                      <!-- Slide 4-->
+                      <div class="swiper-slide swiper-slide_tiendas seccion_uno_slide_uno">
+                        
+                        <a href="#">
+        
+                          <div class="textos_slider_tiendas">
+                            <h2>NOMBRE TIENDA</h2>
+                            <p>descripcion breve de los productos o servicios que encontraras en esta tienda</p>
+                          </div>
+        
+                          <img loading="lazy" src="./assets/imagenes/tecnologia.jpg" alt="">
+        
+                        </a>
+        
+                      </div>
+        
+        
+        
+        
+                      <!-- Slide 5-->
+                      <div class="swiper-slide swiper-slide_tiendas seccion_uno_slide_uno">
+                        
+                        <a href="#">
+        
+                          <div class="textos_slider_tiendas">
+                            <h2>NOMBRE TIENDA</h2>
+                            <p>descripcion breve de los productos o servicios que encontraras en esta tienda</p>
+                          </div>
+        
+                          <img loading="lazy" src="./assets/imagenes/cafeteria.jpg" alt="">
+        
+                        </a>
+        
+                      </div>
+        
+        
+        
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+        
+              
+
+       </div>
+
+       <!-- div overlay-->
+     </div>
+
+  </section>
+
+
+
+
+
+   <!------------------ PLUGINS  --------------------------------------------------------->
+
+
+   <div class="plugins">
+
+    
+    <h2>Zumpango</h2>
+
+    <div class="centro_about">
+      <p class="sub_centro_about">CENTRO</p>
+      <img loading="lazy" src="./assets/imagenes/icon_bag_logo.svg" alt="bag">  
+    </div>
+
+
+    <div class="plugins_items">
+
+      <div class="plugin_item_area">
+        <img loading="lazy" src="./assets/imagenes/img_services_1.svg" alt="logo">
+        <h3>Plusvalia</h3>
+        <span class="line_pligins"></span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius atque quos nihil nostrum deserunt officia ab ea assumenda repellat veniam.</p>
+      </div>
+
+
+      <div class="plugin_item_area">
+        <img loading="lazy" src="./assets/imagenes/img_services_2.svg" alt="logo">
+        <h3>Comparte Sitio Web</h3>
+        <span class="line_pligins"></span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius atque quos nihil nostrum deserunt officia ab ea assumenda repellat veniam.</p>
+      </div>
+
+
+      <div class="plugin_item_area">
+        <img loading="lazy" src="./assets/imagenes/img_services_3.svg" alt="logo">
+        <h3>Economia</h3>
+        <span class="line_pligins"></span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius atque quos nihil nostrum deserunt officia ab ea assumenda repellat veniam.</p>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+    <!------------------ PARALLAX  --------------------------------------------------------->
+
+    <div class="parallax">
+        <div class="overlay_parallax">
+          <div class="textos_parallax">
+    
+            <div class="back"></div>
+    
+            <div class="info_parallax">
+              <img loading="lazy" src="./assets/imagenes/icon_bag1.svg" alt="logo">
+              <h3>Impulsando la economia de Zumpango</h3>
+              <div class="line_parallax"></div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sint doloribus! Numquam, aliquam similique atque consectetur minus, expedita dignissimos Eum cumquea ipsa id repellendus quod, sapiente aliquam similique atque consectetur minus, expedita dignissimos Eum cumque</p>
+            </div>
+    
+    
+          </div>
+        </div>
+      </div>
+
+      
+
+
+
+
+
+ <!------------------ PROMOCIONAL --------------------------------------------------------->
+
+
+ <!------------------ TITLES  --------------------------------------------------------->
+
+ <div id="promocional"></div>
+ <div class="titles title_promocional">
+  <h2>Promocional</h2>
+  <span class="line_subtitle_largo"></span>
+  <p class="descripcion_promocional">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, sapiente. Voluptatum rem, adipisci, hic consequuntur tempore, saepe inventore atque obcaecati modi sunt quo corrupti. Debitis, eum consectetur necessitatibus laboriosam impedit doloribus quisquam omnis quasi animi praesentium est, aperiam quidem. Blanditiis.</p>
+</div>
+
+
+
+
+ <!-- Swiper -->
+ <div class="swiper mySwiper promocional swiper_promocional">
+  <div class="swiper-wrapper">
+
+
+
+    <!-- slide 1 -->
+    <div class="swiper-slide swiper-slide_promocional uno">
+
+      <div class="info_promocional left">
+        <h3>Informacion Importante</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium facere consequuntur numquam nulla sed temporibus quasi asperiores ut id aut.</p>
+      </div>
+
+    </div>
+
+
+
+    <!-- slide 2 -->
+    <div class="swiper-slide swiper-slide_promocional dos">
+
+      <div class="info_promocional">
+        <h3>Informacion Importante</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium facere consequuntur numquam nulla sed temporibus quasi asperiores ut id aut.</p>
+      </div>
+
+    </div>
+
+
+
+    <!-- slide 3 -->
+    <div class="swiper-slide swiper-slide_promocional tres">
+
+      <div class="info_promocional">
+        <h3>Informacion Importante</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium facere consequuntur numquam nulla sed temporibus quasi asperiores ut id aut.</p>
+      </div>
+
+    </div>
+
+
+
+
+    <!-- slide 4 -->
+    <div class="swiper-slide swiper-slide_promocional cuatro">
+
+      <div class="info_promocional">
+        <h3>Informacion Importante</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium facere consequuntur numquam nulla sed temporibus quasi asperiores ut id aut.</p>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+
+
+</main>
+
+
+
+
+
+ <!------------------ CONTACTO --------------------------------------------------------->
+
+
+ <!------------------ TITLES  --------------------------------------------------------->
+
+
+ <footer class="footer" id="contacto">
+
+    <div class="overlay_footer">
+  
+  
+    <div class=" titles titles_tiendas">
+      <h2>Contacto</h2>
+      <span class="line_subtitle_corto"></span>
+    </div>
+  
+  
+    <p class="descripcion_footer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis excepturi, quidem fuga harum fugiat et, vero explicabo exercitationem nulla dolor neque impedit suscipit deleniti dignissimos.</p>
+  
+  
+    <div class="location">
+      <img loading="lazy" src="./assets/imagenes/icon_location.png" alt="logo">
+      <p>Municipio de Zumpango, Edo. Mexico</p>
+    </div>
+  
+  
+  
+    <div class="area_contacto">
+  
+      <div class="area_contacto_sitio">
+  
+        <h3>Contacto con el Sitio Web</h3>
+        <p class="desc">si deseas anunciarte en esta pagina web, ponte en contacto</p>
+  
+        <div class="contact">
+          <img loading="lazy" class="icon" src="./assets/imagenes/icon_whatssap.png" alt="logo">
+          <p>55- 8246 7023</p>
+        </div>
+  
+        <div class="contact">
+          <img loading="lazy" class="icon" src="./assets/imagenes/icon_email.png" alt="logo">
+          <p>jj0026742@gmail.com</p>
+        </div>
+  
+        <div class="contact">
+          <img loading="lazy" class="icon" src="./assets/imagenes/icon_web.png" alt="logo">
+          <p><a class="web" href="#">www.fredydesing.ml</a></p>
+        </div>
+  
+        <div class="contact">
+          <img loading="lazy" class="icon" src="./assets/imagenes/icon_user.png" alt="logo">
+          <p>At'n Fredy Junco</p>
+        </div>
+  
+      </div>
+  
+  
+  
+      <div class="area_contacto_redes">
+        <h3>Redes Sociales relacionadas</h3>
+        <p class="desc">visita redes sociales relacionados con Zumpango CENTRO</p>
+  
+        <div class="redes">
+          <a href="#">
+            <img loading="lazy" class="icon" src="./assets/imagenes/icon_facebok.png" alt="logo">
+            <p>red social</p>  
+          </a>
+        </div>
+  
+        <div class="redes">
+          <a href="#">
+            <img loading="lazy" class="icon" src="./assets/imagenes/icon_instagram.png" alt="logo">
+            <p>red social</p>
+          </a>
+        </div>
+  
+        <div class="redes">
+          <a href="#">
+            <img loading="lazy" class="icon" src="./assets/imagenes/icon_twitter.png" alt="logo">
+            <p>red social</p>
+          </a>
+        </div>
+  
+      </div>
+  
+  
+  
+  
+      <div class="derechos">
+        <p>&copy; Zumpango CENTRO - 2022</p>
+        <p class="reservados">todos los derechos reservados.</p>
+      </div>
+  
+  
+    </div>
+  <!-- div overlay -->
+  </div>
+  
+  
+  </footer>
+
+
+
+
+
+  <script src="./swiper-bundle.min.js"></script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script src="./main.js"></script>
+
+    
+</body>
+</html>
