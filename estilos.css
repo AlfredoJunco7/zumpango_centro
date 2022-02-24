@@ -3414,7 +3414,7 @@ body {
   }
   
   .swiper-slide_banner {
-    padding: 150px 70px;
+    padding: 100px 50px;
   }
   
   .parallax-bg {
@@ -3447,7 +3447,7 @@ body {
     font-size: 15px;
     font-family: var(--font_opens_sans);
     font-weight: 300;
-    max-width: 440px;
+    max-width: 400px;
     line-height: 1.5;
     z-index: 10;
     margin: 20px 0 20px 0;
