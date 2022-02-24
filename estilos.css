@@ -175,7 +175,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 12%;
+    margin-left: 3%;
   }
   .slogan .centro_about p {
     font-family: var(--font_opens_sans);
@@ -4408,6 +4408,19 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
           /* ===================================================  Responsive =========================================================*/
 
 
@@ -4437,7 +4450,7 @@ body {
       }
       
       .swiper-slide_banner {
-        padding: 130px 50px;
+        padding: 90px 60px;
       }
       
       .parallax-bg {
@@ -4467,10 +4480,10 @@ body {
       }
       
       .swiper-slide .text p {
-        font-size: 14px;
+        font-size: 13.5px;
         font-family: var(--font_opens_sans);
         font-weight: 300;
-        max-width: 530px;
+        max-width: 400px;
         line-height: 1.5;
         z-index: 10;
         margin: 20px 0 20px 0;
